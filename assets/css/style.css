@@ -1,0 +1,248 @@
+/* 
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Neutral
+
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Font
+
+- Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+- Weights: 400
+
+- Family: [Big Shoulders Display](https://fonts.google.com/specimen/Big+Shoulders+Display)
+- Weights: 700
+
+
+font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif;
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+main .container{
+    width: auto;
+    height: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+main .container .content{
+    padding-left: 45px;
+    padding-top: 50px;
+}
+
+main .container .content img{
+    margin-bottom: 43px;
+}
+
+main .container .content h1{
+    margin-bottom: 40px;
+
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+main .container .content p{
+    width: 208px;
+    margin-bottom: 90px;
+
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+main .container .content a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    width: 148px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 50px;
+
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    background-color: white;
+}
+
+
+
+
+main .container .column-sedans{
+    width: 310px;
+    height: 500px;
+    background-color: hsl(31, 77%, 52%);
+
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+main .container .column-sedans .content a{
+    color: hsl(31, 77%, 52%);
+}
+
+main .container .column-sedans .content p{
+    color: rgb(210, 194, 157);
+}
+
+
+
+main .container .column-suvs{
+    width: 310px;
+    height: 500px;
+    background-color: hsl(184, 100%, 22%);
+}
+
+main .container .column-suvs .content a{
+    color: hsl(184, 100%, 22%);
+}
+
+main .container .column-suvs .content p{
+    color: rgb(143, 224, 229);
+}
+
+
+
+
+main .container .column-luxury{
+    width: 310px;
+    height: 500px;
+    background-color: hsl(179, 100%, 13%);
+
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+main .container .column-luxury .content a{
+    color: hsl(179, 100%, 13%);
+}
+
+
+main .container .column-luxury .content p{
+    color: rgb(115, 174, 172);
+}
+
+
+
+
+
+main .container .content a:hover{
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 930px){
+    main{
+        height: auto;
+    }
+
+    main .container{
+        width: auto;
+        height: auto;
+    
+        display: flex;
+        
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    main .container .column-sedans,
+    main .container .column-suvs,
+    main .container .column-luxury
+    {
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 621px){
+    main .container{
+        gap: 0;
+    }
+
+    main .container .content p{
+        width: 230px;
+    }
+
+    main .container .column-sedans{
+        width: 330px;
+
+        border-radius: 0;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    main .container .column-suvs{
+        border-radius: 0;
+        width: 330px;
+    }
+
+    main .container .column-luxury{
+        width: 330px;
+
+
+        border-radius: 0;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+}
+
+@media (max-width: 344px){
+
+    main .container .column-sedans,
+    main .container .column-suvs,
+    main .container .column-luxury
+    {
+        width: 300px;
+    }
+}
